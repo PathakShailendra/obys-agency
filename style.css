@@ -117,7 +117,7 @@ body{
 }
 
 #page1{
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     background-color: #151515;
 }
@@ -161,6 +161,18 @@ body{
     text-transform: uppercase;
     line-height: 7vw ;
 }
+
+#hero1::before{
+    content: "01";
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'silk serif';
+    font-weight: 500;
+    left: 20%;
+    top: 36%;
+}
+
+
 
 .hero h2{
     font-size: 6.8vw;
@@ -217,7 +229,7 @@ body{
     border-radius: 50%;
     top: -10%;
     left: 80%;
-    z-index: 999;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,6 +262,17 @@ body{
 #page4-content h1{
     font-size: 7vw;
     text-transform: uppercase;
+    position: relative;
+}
+
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'silk serif';
+    font-weight: 500;
+    left: -13%;
+    top: 3%;
 }
 
 #page4-content .underline{
@@ -311,5 +334,132 @@ body{
 #page5{
     min-height: 100vh;
     width: 100%;
+    position: relative;
+}
 
+.elem{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.elem h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: -2.5vw;
+    animation-name: scrollanime;
+    animation-duration: 23s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollanime {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+
+.elem2{
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.elem2 h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 16px;
+    margin-bottom: -2.5vw;
+    transform: translateX(-100% - 20px);
+    animation-name: scrollanime;
+    animation-duration: 23s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+.elem span{
+    font-style: italic;
+    font-family: 'silk serif';
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+.elem2 span{
+    font-style: italic;
+    font-family: 'silk serif';
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+}
+
+#footer{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    padding-left: 28vw;
+    position: relative;
+    padding-right: 4vw;
+
+}
+
+#footer h1{
+    font-size: 8vw;
+    /* background-color: blue; */
+    text-transform: uppercase;
+    position: relative;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 4vw;
+    font-family: 'silk serif';
+    font-weight: 500;
+    left: -13%;
+    top: 3%;
+}
+
+.underline{
+    height: 1.5px;
+    width: 100%;
+    background-color: #fff;
+    margin: 2vw 0;
+}
+
+#footer #footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 1.5vw;
+    /* margin-bottom: 3vw; */
+}
+
+#footer-div h6{
+    font-size: 1.2vw;
+    margin-bottom: 1.5vw;
+}
+
+#footer-div h5{
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+#footer h4{
+    font-size: 1.2vw;
+    font-weight: 400;
 }
