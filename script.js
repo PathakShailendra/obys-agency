@@ -49,7 +49,7 @@ tl.from("#line1-part1",{
             else{
                 h5Timer.innerHTML = grow
             }
-        },32)
+        },28)
     }
 })
 tl.to(".line h2",{
@@ -59,7 +59,7 @@ tl.to(".line h2",{
 tl.to("#loader",{
     opacity:0,
     duration:0.4,
-    delay:3
+    delay:2.6
 })
 tl.from("#page1",{
     y:1200,
